@@ -81,20 +81,18 @@ let hardWords = [
 ];
 let gameWords;
 
-eventListeners();
-// Event Listeners
-function eventListeners() {
-  difficulties.addEventListener("click", chooseDifficulty);
-}
-// Start Game
+// Event Listener
+difficulties.addEventListener("click", chooseDifficulty);
+
+// Add Space Element To UI
 function startGame() {
   for (let i = 0; i < gameWords[0].word.length; i++) {
     currentWordUI.appendChild(addSpacesOnUI());
   }
+  console.log(gameWords[0].word);
 }
-// Add Spaces On UI
+// Create Space Element
 function addSpacesOnUI() {
-  // Space Element
   let space = document.createElement("div");
   space.className = "letter";
   space.textContent = "_";
