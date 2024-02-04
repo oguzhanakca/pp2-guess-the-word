@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Riot&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #393e46;
+}
+/* Footer */
+footer {
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  justify-content: center;
+}
+footer i {
+  font-size: 32px;
+  margin: 5px 10px;
+}
+/* Icon Colors */
+.fa-facebook-f {
+  color: #4267b2;
+}
+.fa-instagram {
+  color: #e1306c;
+}
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-x-twitter {
+  color: black;
+}
+.fa-envelope {
+  color: #eeeeee;
+}
+/* Start Screen */
+h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  text-align: center;
+}
+/* H! Title Colors */
+.red {
+  color: #ff3b19;
+}
+.green {
+  color: #4cff4c;
+}
+.yellow {
+  color: #ffff4e;
+}
+#start-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#game-title {
+  padding: 60px 0px;
+}
+#difficulties {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#difficulties button {
+  padding: 20px;
+  margin: 40px 0px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #04c5cf;
+  background-color: #222831;
+  border: none;
+  border-radius: 20px;
+}
