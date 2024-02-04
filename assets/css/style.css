@@ -39,6 +39,12 @@ footer i {
   color: #eeeeee;
 }
 /* Start Screen */
+#start-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  display: none;
+}
 h1 {
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
@@ -47,7 +53,6 @@ h1 {
   line-height: 60px;
   text-align: center;
 }
-/* H1 Title Colors */
 .red {
   color: #ff3b19;
 }
@@ -56,11 +61,6 @@ h1 {
 }
 .yellow {
   color: #ffff4e;
-}
-#start-screen {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 #game-title {
   padding: 10px 0px;
@@ -81,4 +81,68 @@ h1 {
   background-color: #222831;
   border: none;
   border-radius: 20px;
+}
+/* Game Screen */
+#game-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#game-header h2 {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#game-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+#hint {
+  text-align: center;
+}
+#current-word {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.letter {
+  padding: 5px;
+  font-size: 42px;
+  text-align: center;
+  width: 58px;
+}
+#player-guess {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#player-input {
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+}
+#player-guess button {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: green;
+  font-size: 20px;
+}
+#history {
+  text-align: center;
+  padding: 5px;
+}
+#history-info h5 {
+  font-size: 32px;
+  color: #eeeeee;
+}
+#history-info hr {
+  border: 1px solid #222831;
+}
+.history-word {
+  display: flex;
+  justify-content: center;
 }
