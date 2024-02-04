@@ -42,33 +42,40 @@
           <span class="green">WORD</span>
         </h2>
       </div>
+      <!-- Game info -->
       <div id="game-info">
-        <h3>Life : 5</h3>
-        <h3>Score : 500</h3>
+        <h3>Life : <span id="remaining-life">5</span></h3>
+        <h3>Score : <span id="current-score">500</span></h3>
       </div>
-      <div id="hint">
-        <h3>Hint</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloremque
-          quod iste amet cum eligendi adipisci ratione repellat
-        </p>
+      <!-- Hint -->
+      <div id="hints">
+        <h3>Theme : Elements</h3>
+        <div id="powers">
+          <button id="hint"><i class="fa-solid fa-lightbulb"></i></button>
+          <button id="life"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <p></p>
       </div>
+      <!-- Current Word -->
       <div id="current-word">
         <div class="letter">_</div>
         <div class="letter">_</div>
         <div class="letter">_</div>
         <div class="letter">_</div>
       </div>
+      <!-- Player Guess -->
       <div id="player-guess">
         <input type="text" id="player-input" />
         <button><i class="fa-regular fa-circle-right"></i></button>
       </div>
+      <!-- Guess history -->
       <div id="history">
         <div id="history-info">
           <h5>History</h5>
           <hr />
         </div>
         <div id="history-words">
+          <!-- History word -->
           <div class="history-word">
             <div class="letter">_</div>
             <div class="letter">_</div>

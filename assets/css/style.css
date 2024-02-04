@@ -87,7 +87,9 @@ h1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  color: #eeeeee;
 }
+/* Game Header */
 #game-header h2 {
   font-size: 32px;
   text-align: center;
@@ -95,14 +97,36 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+/* Game info */
 #game-info {
   display: flex;
   justify-content: space-between;
   padding: 5px;
 }
-#hint {
+#hints {
   text-align: center;
 }
+/* Powers */
+#powers {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+#powers button {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 20px;
+}
+#life {
+  color: #ff0000;
+}
+#hint {
+  color: #ffff4e;
+}
+/* Current Word */
 #current-word {
   display: flex;
   justify-content: center;
@@ -114,6 +138,7 @@ h1 {
   text-align: center;
   width: 58px;
 }
+/* Player Guess */
 #player-guess {
   display: flex;
   justify-content: center;
@@ -131,6 +156,7 @@ h1 {
   color: green;
   font-size: 20px;
 }
+/* Guess History */
 #history {
   text-align: center;
   padding: 5px;
@@ -141,6 +167,7 @@ h1 {
 }
 #history-info hr {
   border: 1px solid #222831;
+  margin: 5px 0px;
 }
 .history-word {
   display: flex;
