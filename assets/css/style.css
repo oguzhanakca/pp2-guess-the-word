@@ -43,7 +43,6 @@ footer i {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  display: none;
 }
 h1 {
   font-family: "Protest Riot", sans-serif;
@@ -88,6 +87,7 @@ h1 {
   justify-content: center;
   flex-direction: column;
   color: #eeeeee;
+  display: none;
 }
 /* Game Header */
 #game-header h2 {
