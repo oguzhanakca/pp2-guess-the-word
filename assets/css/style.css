@@ -47,7 +47,7 @@ h1 {
   line-height: 60px;
   text-align: center;
 }
-/* H! Title Colors */
+/* H1 Title Colors */
 .red {
   color: #ff3b19;
 }
@@ -63,7 +63,7 @@ h1 {
   flex-direction: column;
 }
 #game-title {
-  padding: 60px 0px;
+  padding: 10px 0px;
 }
 #difficulties {
   display: flex;
