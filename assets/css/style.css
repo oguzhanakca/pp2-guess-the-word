@@ -139,13 +139,6 @@ h1 {
   border-radius: 50%;
   font-size: 20px;
 }
-.fa-circle-right {
-  border: none;
-  background-color: transparent;
-  border-radius: 50%;
-  color: green;
-  font-size: 20px;
-}
 /* Powers */
 #powers {
   display: flex;

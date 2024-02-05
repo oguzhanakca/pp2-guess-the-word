@@ -4,6 +4,11 @@ let startScreen = document.getElementById("start-screen");
 let gameScreen = document.getElementById("game-screen");
 let currentWordUI = document.getElementById("current-word");
 
+// Game Settings
+let currentDifficulty;
+let scoreMultiply;
+let powerCost;
+
 // Words Data
 let easyWords = [
   { word: "army", hint: "soldier" },
@@ -134,9 +139,26 @@ function shuffleWords(array) {
 // Choose Difficulty
 function chooseDifficulty(e) {
   let selectedDifficulty = e.target.getAttribute("data-type");
+  currentDifficulty = selectedDifficulty;
   if (selectedDifficulty !== null) {
     gameWords = loadWords(selectedDifficulty);
     loadGame();
     startGame();
+  }
+}
+
+function setMultiplies() {
+  switch (currentDifficulty) {
+    case "easy":
+      scoreMultiply = 10;
+      powerCost = 100;
+      break;
+    case "medium":
+      scoreMultiply = 15;
+      powerCost = 175;
+    default:
+      scoreMultiply = 20;
+      powerCost = 250;
+      break;
   }
 }
