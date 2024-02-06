@@ -2,6 +2,7 @@
 let difficulties = document.getElementById("difficulties");
 let startScreen = document.getElementById("start-screen");
 let gameScreen = document.getElementById("game-screen");
+let correctAnswerScreen = document.getElementById("correct-answer-screen");
 let currentWordUI = document.getElementById("current-word");
 
 // Game Settings
@@ -133,7 +134,7 @@ function loadWords(difficulty) {
   return selectedWords;
 }
 
-// Fisher-Yates Sorting Algorithm
+// Words Shuffle > Fisher-Yates Sorting Algorithm
 function shuffleWords(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

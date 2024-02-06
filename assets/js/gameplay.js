@@ -5,10 +5,15 @@ let historyWords = document.getElementById("history-words");
 let lifePower = document.getElementById("life");
 let hintPower = document.getElementById("hint");
 let playerInput = document.getElementById("player-input");
+let nextButton = document.getElementById("next-button");
+let resetButton = document.getElementById("reset-button");
+let congratzWordUI = document.getElementById("congratz-word");
+let congratzScoreUI = document.getElementById("congratz-score");
 
 // Stats
-let life = 10;
-let score = 500;
+let maxLife = 7;
+let currentLife = maxLife;
+let score = 0;
 
 let hintUsed = false;
 let lifeUsed = false;
@@ -23,6 +28,7 @@ function eventListeners() {
   });
   lifePower.addEventListener("click", useLifePower);
   hintPower.addEventListener("click", useHintPower);
+  nextButton.addEventListener("click", loadNextWord);
 }
 // Check Answer
 function checkAnswer() {
@@ -30,7 +36,8 @@ function checkAnswer() {
   let playerAnswer = playerInput.value;
 
   if (correctAnswer === playerAnswer) {
-    console.log("Correct Answer!");
+    inreaseScore();
+    loadCorrectAnswerScreen();
   } else {
     checkLetters(correctAnswer, playerAnswer);
   }
@@ -55,7 +62,7 @@ function createAnswerElement(correctAnswer, playerAnswer) {
 function checkLetters(correctAnswer, playerAnswer) {
   decreaseLife();
   if (correctAnswer.length === playerAnswer.length) {
-    if (life < 9) {
+    if (currentLife < 6) {
       addToHistoryUI(correctAnswer.length);
     }
     createAnswerElement(correctAnswer, playerAnswer);
@@ -67,17 +74,17 @@ function checkLetters(correctAnswer, playerAnswer) {
 }
 // Decrease Life
 function decreaseLife() {
-  life == 1 ? console.log("game over") : life--;
-  remainingLifeUI.textContent = life;
+  currentLife == 1 ? console.log("game over") : currentLife--;
+  remainingLifeUI.textContent = currentLife;
 }
 // Increase Life
 function increaseLife() {
-  if (life < 10 && score > powerCost && !lifeUsed) {
-    life++;
+  if (currentLife < 10 && score > powerCost && !lifeUsed) {
+    currentLife++;
     decreaseScore();
     remainingLifeUI.textContent = life;
     lifeUsed = true;
-  } else if (life == 10) {
+  } else if (currentLife == maxLife) {
     alert("You can't use this power at full life!");
   } else if (lifeUsed) {
     alert("You already used this power!");
@@ -86,19 +93,20 @@ function increaseLife() {
   }
 }
 // Increase Score
-function scoreIncrease() {
-  let activeLife = lifeused ? life - 1 : life;
+function inreaseScore() {
+  let activeLife = lifeUsed ? currentLife - 1 : currentLife;
   score += activeLife * scoreMultiply;
+  currentScoreUI.textContent = score;
 }
 function decreaseScore() {
   score -= powerCost;
 }
 // Show Hint
 function showHint() {
-  let wordHint = gameWords[0].hint;
+  let wordHint = gameWords[0].hint.toUpperCase();
   if (!hintUsed) {
     if (score >= powerCost) {
-      alert(wordHint);
+      alert("Your Hint : " + wordHint);
       decreaseScore();
       hintUsed = true;
     } else {
@@ -132,4 +140,31 @@ function useHintPower() {
   if (confirm(`Hint costs ${powerCost} Score.\nAre you sure?`)) {
     showHint();
   }
+}
+
+// Load Correct Answer Screen
+function loadCorrectAnswerScreen() {
+  gameScreen.style.display = "none";
+  correctAnswerScreen.style.display = "block";
+  showStatsOnAnswerScreen();
+}
+
+function showStatsOnAnswerScreen() {
+  congratzWordUI.textContent = gameWords[0].word.toUpperCase();
+  congratzScoreUI.textContent = score;
+}
+
+// Load Next Word
+function loadNextWord() {
+  gameWords.shift();
+  currentLife = maxLife;
+  remainingLifeUI.textContent = currentLife;
+  hintUsed = false;
+  lifeUsed = false;
+  historyWords.innerHTML = "";
+  currentWordUI.innerHTML = "";
+  playerInput.value = "";
+  startGame();
+  correctAnswerScreen.style.display = "none";
+  gameScreen.style.display = "block";
 }

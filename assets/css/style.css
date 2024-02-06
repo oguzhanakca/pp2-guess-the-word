@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Protest+Riot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -181,4 +182,41 @@ h1 {
 }
 .wrong-answer {
   background-color: #ff0000c9;
+}
+
+/* Correct Answer Screen */
+#correct-answer-screen {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #eeeeee;
+  font-size: 20px;
+  line-height: 50px;
+  display: none;
+}
+#correct-answer-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#congratz-buttons {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+#congratz-buttons button {
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+}
+#reset-button {
+  color: #ff0000c9;
+}
+#next-button {
+  color: #00ff00c0;
 }
