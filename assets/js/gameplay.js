@@ -22,6 +22,7 @@ function eventListeners() {
     }
   });
   lifePower.addEventListener("click", useLifePower);
+  hintPower.addEventListener("click", useHintPower);
 }
 // Check Answer
 function checkAnswer() {
@@ -39,7 +40,7 @@ function createAnswerElement(correctAnswer, playerAnswer) {
   currentWordUI.innerHTML = "";
   for (let i = 0; i < playerAnswer.length; i++) {
     let letter = document.createElement("div");
-    letter.textContent = playerAnswer[i];
+    letter.textContent = playerAnswer[i].toUpperCase();
     if (correctAnswer[i] === playerAnswer[i]) {
       letter.className = "letter correct-answer";
     } else if (correctAnswer.includes(playerAnswer[i])) {
