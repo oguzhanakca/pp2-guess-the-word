@@ -168,6 +168,7 @@ h1 {
 }
 .history-word {
   display: flex;
+  gap: 5px;
   justify-content: center;
 }
 /* Answers */
