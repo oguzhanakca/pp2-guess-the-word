@@ -1,14 +1,14 @@
 // DOM
 let remainingLifeUI = document.getElementById("remaining-life");
-let currentScore = document.getElementById("current-score");
+let currentScoreUI = document.getElementById("current-score");
 let historyWords = document.getElementById("history-words");
 let lifePower = document.getElementById("life");
 let hintPower = document.getElementById("hint");
 let playerInput = document.getElementById("player-input");
 
 // Stats
-let life = 5;
-let score = 0;
+let life = 10;
+let score = 500;
 
 let hintUsed = false;
 let lifeUsed = false;
@@ -21,6 +21,7 @@ function eventListeners() {
       checkAnswer();
     }
   });
+  lifePower.addEventListener("click", useLifePower);
 }
 // Check Answer
 function checkAnswer() {
@@ -53,7 +54,7 @@ function createAnswerElement(correctAnswer, playerAnswer) {
 function checkLetters(correctAnswer, playerAnswer) {
   decreaseLife();
   if (correctAnswer.length === playerAnswer.length) {
-    if (life < 4) {
+    if (life < 9) {
       addToHistoryUI(correctAnswer.length);
     }
     createAnswerElement(correctAnswer, playerAnswer);
@@ -70,9 +71,18 @@ function decreaseLife() {
 }
 // Increase Life
 function increaseLife() {
-  life == 5 ? alert("You can't use this power at full life!") : life++;
-  score > 100 ? (score -= 100) : alert("Your score is too low!");
-  lifeUsed = true;
+  if (life < 10 && score > powerCost && !lifeUsed) {
+    life++;
+    decreaseScore();
+    remainingLifeUI.textContent = life;
+    lifeUsed = true;
+  } else if (life == 10) {
+    alert("You can't use this power at full life!");
+  } else if (lifeUsed) {
+    alert("You already used this power!");
+  } else {
+    alert("Your score is too low!");
+  }
 }
 // Increase Score
 function scoreIncrease() {

@@ -116,12 +116,18 @@ function loadWords(difficulty) {
   switch (difficulty) {
     case "easy":
       selectedWords = shuffleWords(easyWords);
+      scoreMultiply = 10;
+      powerCost = 100;
       break;
     case "medium":
       selectedWords = shuffleWords(mediumWords);
+      scoreMultiply = 15;
+      powerCost = 175;
       break;
     default:
       selectedWords = shuffleWords(hardWords);
+      scoreMultiply = 20;
+      powerCost = 250;
       break;
   }
   return selectedWords;
@@ -144,21 +150,5 @@ function chooseDifficulty(e) {
     gameWords = loadWords(selectedDifficulty);
     loadGame();
     startGame();
-  }
-}
-
-function setMultiplies() {
-  switch (currentDifficulty) {
-    case "easy":
-      scoreMultiply = 10;
-      powerCost = 100;
-      break;
-    case "medium":
-      scoreMultiply = 15;
-      powerCost = 175;
-    default:
-      scoreMultiply = 20;
-      powerCost = 250;
-      break;
   }
 }
