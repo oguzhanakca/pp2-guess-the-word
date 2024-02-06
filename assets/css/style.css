@@ -170,6 +170,7 @@ h1 {
   display: flex;
   gap: 5px;
   justify-content: center;
+  margin-bottom: 5px;
 }
 /* Answers */
 .correct-answer {
