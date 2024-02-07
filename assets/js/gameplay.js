@@ -9,6 +9,9 @@ let nextButton = document.getElementById("next-button");
 let resetButton = document.getElementById("reset-button");
 let congratzWordUI = document.getElementById("congratz-word");
 let congratzScoreUI = document.getElementById("congratz-score");
+let wrongWordUI = document.getElementById("wrong-word");
+let wrongScoreUI = document.getElementById("wrong-score");
+let wrongResetButton = document.getElementById("wrong-reset-button");
 
 // Stats
 let maxLife = 7;
@@ -30,12 +33,12 @@ function eventListeners() {
   hintPower.addEventListener("click", useHintPower);
   nextButton.addEventListener("click", loadNextWord);
   resetButton.addEventListener("click", resetGame);
+  wrongResetButton.addEventListener("click", resetGame);
 }
 // Check Answer
 function checkAnswer() {
   let correctAnswer = gameWords[0].word;
   let playerAnswer = playerInput.value;
-
   if (correctAnswer === playerAnswer) {
     inreaseScore();
     loadCorrectAnswerScreen();
@@ -75,7 +78,12 @@ function checkLetters(correctAnswer, playerAnswer) {
 }
 // Decrease Life
 function decreaseLife() {
-  currentLife == 1 ? console.log("game over") : currentLife--;
+  if (currentLife == 1) {
+    statsGameOver();
+    gameOver();
+  } else {
+    currentLife--;
+  }
   remainingLifeUI.textContent = currentLife;
 }
 // Increase Life
@@ -155,6 +163,18 @@ function showStatsOnAnswerScreen() {
   congratzScoreUI.textContent = score;
 }
 
+// Show Stats Game Over Screen
+function statsGameOver() {
+  wrongWordUI.textContent = gameWords[0].word.toUpperCase();
+  wrongScoreUI.textContent = score;
+}
+
+// Game Over Screen
+function gameOver() {
+  wrongAnswerScreen.style.display = "block";
+  gameScreen.style.display = "none";
+}
+
 // Load Next Word
 function loadNextWord() {
   gameWords.shift();
@@ -181,5 +201,6 @@ function resetGame() {
   currentScoreUI.textContent = score;
   resetGameScreen();
   correctAnswerScreen.style.display = "none";
+  wrongAnswerScreen.style.display = "none";
   startScreen.style.display = "block";
 }

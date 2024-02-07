@@ -3,6 +3,7 @@ let difficulties = document.getElementById("difficulties");
 let startScreen = document.getElementById("start-screen");
 let gameScreen = document.getElementById("game-screen");
 let correctAnswerScreen = document.getElementById("correct-answer-screen");
+let wrongAnswerScreen = document.getElementById("wrong-answer-screen");
 let currentWordUI = document.getElementById("current-word");
 
 // Game Settings
