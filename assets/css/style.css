@@ -234,3 +234,52 @@ h1 {
   line-height: 50px;
   display: none;
 }
+
+/* Contact */
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  color: #eeeeee;
+  gap: 10px;
+}
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+#contact-form input {
+  padding: 5px;
+  border: none;
+  background-color: #222831;
+  border-radius: 5px;
+  color: #ffffff;
+}
+#text-area {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  border: none;
+  border-radius: 5px;
+  background-color: #222831;
+  color: #ffffff;
+  padding: 5px;
+  width: 100%;
+}
+#form-button {
+  display: flex;
+  justify-content: end;
+}
+#send-button {
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: none;
+  color: #222831;
+  background-color: #00ff00c0;
+}
