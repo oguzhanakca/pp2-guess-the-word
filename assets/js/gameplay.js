@@ -29,6 +29,7 @@ function eventListeners() {
   lifePower.addEventListener("click", useLifePower);
   hintPower.addEventListener("click", useHintPower);
   nextButton.addEventListener("click", loadNextWord);
+  resetButton.addEventListener("click", resetGame);
 }
 // Check Answer
 function checkAnswer() {
@@ -148,7 +149,7 @@ function loadCorrectAnswerScreen() {
   correctAnswerScreen.style.display = "block";
   showStatsOnAnswerScreen();
 }
-
+// Show Stats on Congratz Screen
 function showStatsOnAnswerScreen() {
   congratzWordUI.textContent = gameWords[0].word.toUpperCase();
   congratzScoreUI.textContent = score;
@@ -157,6 +158,14 @@ function showStatsOnAnswerScreen() {
 // Load Next Word
 function loadNextWord() {
   gameWords.shift();
+  resetGameScreen();
+  startGame();
+  correctAnswerScreen.style.display = "none";
+  gameScreen.style.display = "block";
+}
+
+// Reset Game Screen
+function resetGameScreen() {
   currentLife = maxLife;
   remainingLifeUI.textContent = currentLife;
   hintUsed = false;
@@ -164,7 +173,13 @@ function loadNextWord() {
   historyWords.innerHTML = "";
   currentWordUI.innerHTML = "";
   playerInput.value = "";
-  startGame();
+}
+
+// Reset Game
+function resetGame() {
+  score = 0;
+  currentScoreUI.textContent = score;
+  resetGameScreen();
   correctAnswerScreen.style.display = "none";
-  gameScreen.style.display = "block";
+  startScreen.style.display = "block";
 }
