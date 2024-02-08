@@ -239,9 +239,6 @@ h1 {
 }
 
 /* Contact */
-#contact-form {
-  display: none;
-}
 #contact-container {
   display: flex;
   flex-direction: column;
@@ -291,6 +288,9 @@ textarea {
 }
 
 /* Feedback Result */
+#result-screen {
+  display: none;
+}
 #feedback-result {
   display: flex;
   flex-direction: column;

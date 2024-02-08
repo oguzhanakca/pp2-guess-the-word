@@ -1,4 +1,6 @@
 let sendButton = document.getElementById("send-button");
+let feedbackScreen = document.getElementById("contact-form");
+let resultScreen = document.getElementById("result-screen");
 
 function eventListeners() {
   sendButton.addEventListener("click", sendEmail);
@@ -31,7 +33,11 @@ function sendEmail(e) {
         console.log("FAILED...", error);
       }
     );
+  showThankYouScreen();
   e.preventDefault();
 }
 
-function showThankYouScreen() {}
+function showThankYouScreen() {
+  feedbackScreen.style.display = "none";
+  resultScreen.style.display = "block";
+}
