@@ -10,6 +10,9 @@ body {
   min-height: 100vh;
   background-color: #393e46;
 }
+a {
+  text-decoration: none;
+}
 /* Footer */
 footer {
   z-index: 99;
@@ -236,6 +239,9 @@ h1 {
 }
 
 /* Contact */
+#contact-form {
+  display: none;
+}
 #contact-container {
   display: flex;
   flex-direction: column;
@@ -282,4 +288,15 @@ textarea {
   border: none;
   color: #222831;
   background-color: #00ff00c0;
+}
+
+/* Feedback Result */
+#feedback-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  color: #eeeeee;
 }
