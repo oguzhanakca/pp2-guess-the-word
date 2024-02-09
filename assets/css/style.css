@@ -107,20 +107,24 @@ h1 {
   justify-content: space-between;
   align-items: baseline;
   padding: 10px;
+  font-size: 20px;
 }
 /* Current Word */
+#game-screen {
+  padding: 5px;
+}
 #current-word {
   display: flex;
   justify-content: center;
   margin: 15px 0px;
-  gap: 5px;
+  gap: 3px;
 }
 .letter {
   padding: 5px;
-  font-size: 42px;
+  font-size: 40px;
   text-align: center;
-  width: 40px;
-  color: #222831;
+  min-width: 39px;
+  color: black;
 }
 /* Player Guess */
 #player-guess {
@@ -164,11 +168,11 @@ h1 {
 }
 #history-info h5 {
   font-size: 32px;
-  color: #eeeeee;
+  color: #04c5cf;
 }
 #history-info hr {
-  border: 1px solid #222831;
-  margin: 5px 0px;
+  border: 1px solid black;
+  margin: 15px 0px;
 }
 .history-word {
   display: flex;
@@ -299,4 +303,41 @@ textarea {
   gap: 20px;
   padding-top: 20px;
   color: #eeeeee;
+}
+
+/* 404 Page */
+#error-page {
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 20px;
+  color: #eeeeee;
+}
+
+#error-page h2 {
+  font-size: 50px;
+}
+
+#error-page h3 {
+  font-size: 30px;
+}
+
+#error-home {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #222831;
+}
+
+#error-home a {
+  color: #04c5cf;
+  font-size: 20px;
+  font-weight: 600;
 }
