@@ -92,6 +92,7 @@ h1 {
   flex-direction: column;
   color: #eeeeee;
   display: none;
+  padding: 5px;
 }
 /* Game Header */
 #game-header h2 {
@@ -110,9 +111,6 @@ h1 {
   font-size: 20px;
 }
 /* Current Word */
-#game-screen {
-  padding: 5px;
-}
 #current-word {
   display: flex;
   justify-content: center;
@@ -146,13 +144,6 @@ h1 {
   background-color: transparent;
   border-radius: 50%;
   font-size: 20px;
-}
-/* Powers */
-#powers {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  gap: 5px;
 }
 #life {
   color: #ff0000;
@@ -193,21 +184,21 @@ h1 {
 
 /* Correct Answer Screen */
 #correct-answer-screen {
+  display: none;
+}
+.answer-container {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #eeeeee;
-  font-size: 20px;
-  line-height: 50px;
-  display: none;
-}
-.answer-container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 20px;
+  line-height: 50px;
 }
 .progress-buttons {
   display: flex;
@@ -233,12 +224,6 @@ h1 {
 /* Wrong Answer Screen*/
 
 #wrong-answer-screen {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #eeeeee;
-  font-size: 20px;
-  line-height: 50px;
   display: none;
 }
 
@@ -307,7 +292,7 @@ textarea {
 
 /* 404 Page */
 #error-page {
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -329,6 +314,10 @@ textarea {
   font-size: 30px;
 }
 
+#page-explanation {
+  font-size: 20px;
+}
+
 #error-home {
   padding: 10px;
   border: none;
@@ -340,4 +329,131 @@ textarea {
   color: #04c5cf;
   font-size: 20px;
   font-weight: 600;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  footer i {
+    font-size: 50px;
+  }
+  /* Start Screen */
+  #start-screen {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+  #difficulties button {
+    font-size: 60px;
+  }
+  /* Game Screen */
+  #game-screen {
+    padding: 10px;
+  }
+  /* Game Header */
+  #game-header h2 {
+    font-size: 50px;
+  }
+  /* Game Info */
+  #game-info {
+    font-size: 40px;
+  }
+  /* Current Word */
+  #current-word {
+    gap: 10px;
+  }
+  /* Letters */
+  .letter {
+    font-size: 90px;
+    width: 80px;
+  }
+
+  /* Player Input */
+
+  #player-guess {
+    margin: 20px 0px;
+  }
+
+  #player-input {
+    padding: 20px 10px;
+    font-size: 30px;
+    width: 300px;
+  }
+
+  /* Powers */
+  #player-guess button {
+    font-size: 40px;
+  }
+
+  #history-info h5 {
+    font-size: 45px;
+  }
+  #history-info hr {
+    width: 70%;
+    margin: 15px auto;
+  }
+
+  /* Correct Answer Screeen */
+  .answer-container {
+    gap: 30px;
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .progress-buttons button {
+    font-size: 50px;
+  }
+
+  /* Contact */
+  #contact-form {
+    padding: 50px 100px;
+  }
+  #contact-container {
+    font-size: 30px;
+  }
+  #contact-form input {
+    font-size: 25px;
+  }
+  textarea {
+    width: 100%;
+    font-size: 25px;
+  }
+  #send-button {
+    font-size: 30px;
+    padding: 10px;
+  }
+  /* Contact Result */
+  #feedback-result {
+    text-align: center;
+    font-size: 35px;
+    min-height: 40vh;
+  }
+
+  /* 404 Page */
+  #error-page {
+    gap: 40px;
+  }
+  #error-page h2 {
+    font-size: 60px;
+  }
+  #error-page h3 {
+    font-size: 55px;
+  }
+  #page-explanation {
+    font-size: 40px;
+  }
+
+  #error-home {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #222831;
+  }
+
+  #error-home a {
+    color: #04c5cf;
+    font-size: 40px;
+    font-weight: 600;
+  }
 }

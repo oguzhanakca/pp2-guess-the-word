@@ -181,7 +181,7 @@ function loadNextWord() {
   resetGameScreen();
   startGame();
   correctAnswerScreen.style.display = "none";
-  gameScreen.style.display = "block";
+  gameScreen.style.display = "flex";
 }
 
 // Reset Game Screen

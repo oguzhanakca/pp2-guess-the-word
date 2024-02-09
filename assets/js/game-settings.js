@@ -109,7 +109,7 @@ function addSpacesOnUI() {
 // Display Game Screen & Hide Start Screen
 function loadGame() {
   startScreen.style.display = "none";
-  gameScreen.style.display = "block";
+  gameScreen.style.display = "flex";
 }
 
 // Load Words
