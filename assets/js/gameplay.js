@@ -88,7 +88,7 @@ function decreaseLife() {
 }
 // Increase Life
 function increaseLife() {
-  if (currentLife < 10 && score > powerCost && !lifeUsed) {
+  if (currentLife < maxLife && score > powerCost && !lifeUsed) {
     currentLife++;
     decreaseScore();
     remainingLifeUI.textContent = life;

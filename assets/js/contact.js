@@ -11,8 +11,6 @@ eventListeners();
   emailjs.init("e41jrb0pzCdWwUN-m");
 })();
 
-// Email JS Parameters
-
 // Send Email
 function sendEmail(e) {
   let contactName = document.getElementById("name").value;
