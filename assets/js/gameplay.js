@@ -15,6 +15,9 @@ let wrongResetButton = document.getElementById("wrong-reset-button");
 let endGameScore = document.getElementById("end-game-score");
 let endGameResetButton = document.getElementById("end-game-reset");
 let howToPlayButton = document.getElementById("how-to-play");
+let correctAnswerScreen = document.getElementById("correct-answer-screen");
+let wrongAnswerScreen = document.getElementById("wrong-answer-screen");
+let endGameScreen = document.getElementById("end-game");
 
 // Stats
 let maxLife = 7;
