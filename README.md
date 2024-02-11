@@ -4,7 +4,7 @@
 
 ![Mockup image](docs/am-i-responsive.jpg)
 
-[Live webpage](https://4n4ru.github.io/CI_MS1_BodelschwingherHof/)
+[Live webpage](https://oguzhanakca.github.io/pp2-guess-the-word/)
 
 ## Table of Content
 
@@ -40,112 +40,122 @@
 
 ## Project Goals
 
+Guess The Word is a challenging game for people who wanna test their knowledge of words.
+
 ### User Goals
 
-- Finding a restaurant that offers a nice atmosphere and good food.
-- See a full menu with clear pricing.
-- Find information about the restaurant.
-- Find the location of the restaurant
+- Playing a challenging word guessing game
+- Having fun while spending time
 
 ### Site Owner Goals
 
-- Increase in the number of customers.
-- Promote the bussines.
-- Provide a way for new and existing customers to contact the buissnes.
-- Provide essential information about the bussines to customers.
+- Create a challenging game
+- Give players more chances incase they need
+- Game should be playable on different devices
 
 ## User Experience
 
 ### Target Audience
 
-- People looking for a place to dine at
-- People looking to order take away
-- Groups of people looking for a place to carter a event
-- Small to medium wedding parties
+- People who wants to play a challenging game and have fun
+- People who wants to test their knowledge
 
-### User Requrements and Expectations
+### User Requirements and Expectations
 
-- A simple and intuitive navigation system
-- Quickly and easily find relevant information
-- Links and functions that work as expected
-- Good presentation and a visually appealing design regardless of screen size
-- An easy way to contact the bussines
-- Simple content that the user can skim read
 - Accessibility
+- Easy and challenging to play
+- Eye-friendly UI Design
+- Learning how to play
+- Easy to give feedback
+- Replayability
 
 ### User Stories
 
 #### First-time User
 
-1. As a first time user, I want to know where the restaurant is lokated
-2. As a first time user, I want to know the price range
-3. As a first time user, I want to know more about the restaurant
-4. As a first time user, I want to get a feel of what to expect at the restaurant
+As a first time user,
+
+1. I want to be able to choose game difficulty
+2. I want to know how to play
+3. I want to have additional hints & lifes
+4. I want to know the word even if i can't to guess
+5. I want to find social media accounts
+6. I want to leave feedback
+7. I want to see my life & score
+8. I want to see the cost of powers
+9. I want to see the history of my guesses
+10. I want to know if my guess is correct or not
+11. I want to restart the game when i fail
 
 #### Returning User
 
-5. As a returning user, I want to see the Sunday meal offer
-6. As a returnign user, I want to know the opening times
-7. As a returning user, I want to find a phone number to call for reservation
-8. As a returning user, I want to see the menu
-9. As a returning user, I want to leave some comment, suggestion or message to the staff
-10. As a returning user, I want to find the restaurant on social media
-11. As a returning user, I want to know who is preparing the food
-12. As a returning user, I want to get directions to the restaurant
+As a returning user, 12. I want to be able to choose game difficulty 13. I want to remember how to play 14. I want to find social media accounts 15. I want to give feedback
 
 #### Site Owner
 
-13. As the site owner, I want users to find news about upcoming events or changes in opening times
-14. As the site owner, I want users to get to know the restaurant
-15. As the site owner, I want the users to be able to contact us
+As the site owner, 16. I want users to be able to find our social media accounts 14. I want users to be able to find how to play 15. I want users to be able to give feedback
 
 ## Design
 
 ### Design Choices
 
-The webpage was designed with the feeling a customer might get while dining at the restaurant. It is calm, warm and inviting.
-Some of the imagery on the page has a round shape with a border to resemble food served on a plate.
+The game is designed with an interface that will not hurt user's eyes. Also with the difficulty levels, it's aimed for the users to test themselves while having fun.
 
 ### Colour
 
-For the colour sheme warm brown tones were chosen to match the images on the page and also the colour theme of the actual restaurant. To narrow down the colours I used Adobe Color. After deciding on the colour I tested them on WebAIM to make sure the contrast between them was right.
+Dark and soft colors was chosen to keep eye-friendly design. Also users can get clear info about their guesses.
 <br>
 
-![Colour scheme](docs/features/color-palette.png)
+![Colour Palette](docs/features/color-palette.png)
 
 ### Fonts
 
-Pinyon script with cursive as fallback was used for the logo to match the sign outside the restaurant.
+Game title : Protest Riot
 <br>
-Montserrat was used for the body and Roboto for headings. Both fonts are considered dyslexia friendly.
+Difficulty options : Permanent Marker
+<br>
+Main Font : Oswald
 
 ### Structure
 
-The page is structured in a well know, recognizable, user friendly, and easy to learn way. Upon arriving to the website the user sees a familiar type of navigation bar with the restaurant logo on the left side and the navigation links to the right.
-The website consists of five separate pages:
+The page is structured in a user and eye-friendly way. It's easy to learn and engage. The website consists of three separate pages:
 
-- A homepage with a sections for News and Sunday Meal Offers
-- An about page with the About Us and Meet the Chef
-- A menu page
-- A image gallery with images and video showcasing the general feel of the restaurant
-- A contact page with a contact form, a map and information about the bussines section
+- A homepage with 5 different views:
+  - Game Difficulty Screen
+  - Gameplay Screen
+  - Correct Answer Screen
+  - Wrong Answer Screen
+  - End Game Screen
+- A Contact Page with 2 different views
+  - Contact Form
+  - Thanking to user for the contact
+- A 404 Page
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframes/wireframes-homepage.png">
+<details><summary>Start Game</summary>
+<img src="docs/wireframes/start-screen.jpg">
 </details>
-<details><summary>About</summary>
-<img src="docs/wireframes/wireframes-about.png">
+<details><summary>Gameplay</summary>
+<img src="docs/wireframes/game-screen.jpg">
 </details>
-<details><summary>Menu</summary>
-<img src="docs/wireframes/wireframes-menu.png">
+<details><summary>Correct Answer</summary>
+<img src="docs/wireframes/correct-answer.jpg">
 </details>
-<details><summary>Gallery</summary>
-<img src="docs/wireframes/wireframes-gallery.png">
+<details><summary>Wrong Answer</summary>
+<img src="docs/wireframes/wrong-answer.jpg">
+</details>
+<details><summary>End Game</summary>
+<img src="docs/wireframes/end-game.jpg">
 </details>
 <details><summary>Contact</summary>
-<img src="docs/wireframes/wireframes-contact.png">
+<img src="docs/wireframes/contact.jpg">
+</details>
+<details><summary>Contact Result</summary>
+<img src="docs/wireframes/contact-result.jpg">
+</details>
+<details><summary>404</summary>
+<img src="docs/wireframes/404.jpg">
 </details>
 
 ## Technologies Used
@@ -154,41 +164,45 @@ The website consists of five separate pages:
 
 - HTML
 - CSS
+- JavaScript
 
 ### Frameworks & Tools
 
-- Bootstrap v5.0
 - Git
 - GitHub
-- Gitpod
-- Tinypng
-- Paint<span>.</span>NET
 - Balsamiq
 - Google Fonts
-- Adobe Color
 - Font Awsome
-- Favicon<span>.</span>io
+- Favicon.io
+- Color-hex.com
 
 ## Features
 
 The page consists of five pages and fourteen features
 
-### Logo and Navigation Bar
+### Logo & Title
 
-- Featured on all five pages
-- The navbar is fully responsive and changes to a toggler (hamburger menu) on smaller screens and includes
-  links to the Homepage, About page, Menu page, Gallery and Contact us page
+- Featured on all pages
+- It allows users to easily navigate the homepage
+- User stories covered:
+
+![Logo & Title](docs/features/logo.jpg)
+
+### Footer
+
+- Featured on all pages except 404 page
+- The footer navigates to contact page and other social media platforms
 - It allows users to easily navigate the page
-- The link for the page the user is currently on is highlighted
+- User stories covered:
 
-![Logo and navbar](docs/features/feature-logo-and-navbar.jpg)
+![Footer](docs/features/footer.jpg)
 
-### Carousel
+### Difficulty Screen
 
-- Introduces the user to the restaurant with a small three picture slide show
-- Options for the user to navigate the slide show via back and forward arrows or indicators at the bottom
+- Gives users the option to choose difficulty
+- User stories covered:
 
-![Carousel](docs/features/feature-carousel.jpg)
+![Difficulty Screen](docs/features/feature-carousel.jpg)
 
 ### News
 
