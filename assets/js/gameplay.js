@@ -14,6 +14,7 @@ let wrongScoreUI = document.getElementById("wrong-score");
 let wrongResetButton = document.getElementById("wrong-reset-button");
 let endGameScore = document.getElementById("end-game-score");
 let endGameResetButton = document.getElementById("end-game-reset");
+let howToPlayButton = document.getElementById("how-to-play");
 
 // Stats
 let maxLife = 7;
@@ -37,6 +38,14 @@ function eventListeners() {
   resetButton.addEventListener("click", resetGame);
   wrongResetButton.addEventListener("click", resetGame);
   endGameResetButton.addEventListener("click", resetGame);
+  howToPlayButton.addEventListener("click", howToPlay);
+}
+
+// Show How To Play
+function howToPlay() {
+  let explanation =
+    "Try to guess the word!\nRed Background = Word doesn't contains the letter.\nYellow Background = Word contains the letter, but its in the wrong place.\nGreen Background = Word contains letter and its in correct place.\nEvery power can be used once every word.\nHeart = Gives +1 Life\nLight Bulb = Gives info about current word.\nPower costs change with game difficulty.\nGood luck!";
+  alert(explanation);
 }
 // Check Answer
 function checkAnswer() {

@@ -110,6 +110,14 @@ h1 {
   padding: 10px;
   font-size: 20px;
 }
+#how-to-play {
+  font-size: 20px;
+  padding: 5px 13px;
+  border-radius: 50%;
+  border: none;
+  background-color: #04c5cf;
+  color: black;
+}
 /* Current Word */
 #current-word {
   display: flex;
@@ -363,6 +371,10 @@ textarea {
   /* Game Info */
   #game-info {
     font-size: 40px;
+  }
+  #how-to-play {
+    font-size: 40px;
+    padding: 10px 25px;
   }
   /* Current Word */
   #current-word {
