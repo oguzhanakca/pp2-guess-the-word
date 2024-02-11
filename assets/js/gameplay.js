@@ -51,7 +51,7 @@ function howToPlay() {
 function checkAnswer() {
   let correctAnswer = gameWords[0].word;
   let playerAnswer = playerInput.value;
-  if (correctAnswer === playerAnswer) {
+  if (correctAnswer.toUpperCase() === playerAnswer.toUpperCase()) {
     inreaseScore();
     if (gameWords.length == 1) {
       showEndGameScreen();
