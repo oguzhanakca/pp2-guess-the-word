@@ -202,19 +202,19 @@ The page consists of five pages and fourteen features
 - Gives users the option to choose difficulty
 - User stories covered:
 
-![Difficulty Screen](docs/features/feature-carousel.jpg)
+![Difficulty Screen](docs/features/difficulty.jpg)
 
-### News
+### Game Information & How To Play
 
-- Allowes the user to see upcoming events or any news about the restaurant
-- User stories covered: 13
+- Shows users their current stats
+- User stories covered:
 
-![News](docs/features/feature-news.jpg)
+![News](docs/features/game-information.jpg)
 
-### Meal-deal
+### How To Play
 
-- Allowes users to see what meal-deal is available for the upcoming Sunday
-- User stories covered: 5
+- Shows users how to play
+- User stories covered:
 
 ![Meal-deal](docs/features/feature-meal-deal.jpg)
 

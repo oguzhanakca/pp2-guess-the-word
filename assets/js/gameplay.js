@@ -47,7 +47,7 @@ function eventListeners() {
 // Show How To Play
 function howToPlay() {
   let explanation =
-    "Try to guess the word!\nRed Background = Word doesn't contains the letter.\nYellow Background = Word contains the letter, but its in the wrong place.\nGreen Background = Word contains letter and its in correct place.\nEvery power can be used once every word.\nHeart = Gives +1 Life\nLight Bulb = Gives info about current word.\nPower costs change with game difficulty.\nGood luck!";
+    "Red Background = Word doesn't contains the letter.\nYellow Background = Word contains the letter, but its in the wrong place.\nGreen Background = Word contains letter and its in correct place.\nEvery power can be used once every word.\nHeart = Gives +1 Life\nLight Bulb = Gives info about current word.\nPower costs change with game difficulty.";
   alert(explanation);
 }
 // Check Answer
