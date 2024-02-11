@@ -12,6 +12,8 @@ let congratzScoreUI = document.getElementById("congratz-score");
 let wrongWordUI = document.getElementById("wrong-word");
 let wrongScoreUI = document.getElementById("wrong-score");
 let wrongResetButton = document.getElementById("wrong-reset-button");
+let endGameScore = document.getElementById("end-game-score");
+let endGameResetButton = document.getElementById("end-game-reset");
 
 // Stats
 let maxLife = 7;
@@ -34,6 +36,7 @@ function eventListeners() {
   nextButton.addEventListener("click", loadNextWord);
   resetButton.addEventListener("click", resetGame);
   wrongResetButton.addEventListener("click", resetGame);
+  endGameResetButton.addEventListener("click", resetGame);
 }
 // Check Answer
 function checkAnswer() {
@@ -41,7 +44,11 @@ function checkAnswer() {
   let playerAnswer = playerInput.value;
   if (correctAnswer === playerAnswer) {
     inreaseScore();
-    loadCorrectAnswerScreen();
+    if (gameWords.length == 1) {
+      showEndGameScreen();
+    } else {
+      loadCorrectAnswerScreen();
+    }
   } else {
     checkLetters(correctAnswer, playerAnswer);
   }
@@ -202,5 +209,12 @@ function resetGame() {
   resetGameScreen();
   correctAnswerScreen.style.display = "none";
   wrongAnswerScreen.style.display = "none";
+  endGameScreen.style.display = "none";
   startScreen.style.display = "block";
+}
+
+function showEndGameScreen() {
+  gameScreen.style.display = "none";
+  endGameScreen.style.display = "block";
+  endGameScore.textContent = score;
 }

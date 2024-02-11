@@ -227,6 +227,11 @@ h1 {
   display: none;
 }
 
+/* End Game */
+#end-game {
+  display: none;
+}
+
 /* Contact */
 #contact-container {
   display: flex;
