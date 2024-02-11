@@ -333,12 +333,8 @@ textarea {
 
 #error-home {
   padding: 10px;
-  border: none;
   border-radius: 10px;
   background-color: #222831;
-}
-
-#error-home a {
   color: #04c5cf;
   font-size: 20px;
   font-weight: 600;
@@ -463,12 +459,8 @@ textarea {
 
   #error-home {
     padding: 15px;
-    border: none;
     border-radius: 10px;
     background-color: #222831;
-  }
-
-  #error-home a {
     color: #04c5cf;
     font-size: 40px;
     font-weight: 600;
