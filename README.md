@@ -2,7 +2,7 @@
 
 (Developed by Oğuzhan Akça)
 
-![Mockup image](docs/am-i-responsive.jpg)
+![Mockup image](docs/am-i-responsive-mockup.jpg)
 
 [Live webpage](https://oguzhanakca.github.io/pp2-guess-the-word/)
 
@@ -116,7 +116,7 @@ The game is designed with an interface that will not hurt user's eyes. Also with
 Dark and soft colors was chosen to keep eye-friendly design. Also users can get clear info about their guesses.
 <br>
 
-![Colour Palette](docs/features/color-palette.png)
+![Colour Palette](docs/features/color-palette.jpg)
 
 ### Fonts
 
@@ -185,10 +185,13 @@ The page is structured in a user and eye-friendly way. It's easy to learn and en
 - Font Awsome
 - Favicon.io
 - Color-hex.com
+- Validator.w3.org
+- Jigsaw.w3.org
+- Wave.webaim.org
+- Jshint.com
+- EmailJS
 
 ## Features
-
-The page consists of five pages and fourteen features
 
 ### Footer
 
@@ -337,217 +340,207 @@ As a first time user,
 
 1.  I want to be able to choose game difficulty
 
-| **Feature**                          | **Action**                            | **Expected Result**                | **Actual Result** |
-| ------------------------------------ | ------------------------------------- | ---------------------------------- | ----------------- |
-| Choosing Difficulty                  | Click the expected difficulty         | Game starts with chosen difficulty | Works as expected |
-| Footer - contact information section | On any page scroll down to the footer | Find the address of the restaurant | Works as expected |
+| **Feature**         | **Action**                    | **Expected Result**                | **Actual Result** |
+| ------------------- | ----------------------------- | ---------------------------------- | ----------------- |
+| Choosing Difficulty | Click the expected difficulty | Game starts with chosen difficulty | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-1v1-12.jpg">
-<img src="docs/user-story-testing/user-story-1v2.jpg">
+<img src="docs/user-story-test/difficulty-user-test.jpg">
 </details>
 
 2. I want to know how to play
 
-| **Feature** | **Action**                | **Expected Result**     | **Actual Result** |
-| ----------- | ------------------------- | ----------------------- | ----------------- |
-| Menu        | Navigate to the Menu page | See prices on menu page | Works as expected |
+| **Feature** | **Action**     | **Expected Result**                  | **Actual Result** |
+| ----------- | -------------- | ------------------------------------ | ----------------- |
+| How To Play | Click "i" icon | Shows how to play in an alert window | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-2.jpg">
+<img src="docs/user-story-test/how-to-play-user-test.jpg">
 </details>
 
 3. I want to have additional hints & lifes
 
-| **Feature**      | **Action**                                                             | **Expected Result**                | **Actual Result** |
-| ---------------- | ---------------------------------------------------------------------- | ---------------------------------- | ----------------- |
-| About Us         | Navigate to the About page and locate the About Us section             | Find description of the restaurant | Works as expected |
-| Customer reviews | Navigate to the About page, scroll down to What our guests say section | Read customer reviews              | Works as expected |
+| **Feature** | **Action**              | **Expected Result**                        | **Actual Result** |
+| ----------- | ----------------------- | ------------------------------------------ | ----------------- |
+| Hint Joker  | Click "Light Bulb" icon | After users confirm, gives the hint        | Works as expected |
+| Heart Joker | Click "Heart" icon      | After users confirm, gives additional life | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/hint-user-test.jpg">
+<img src="docs/user-story-test/heart-user-test.jpg">
 </details>
 
 4. I want to find social media accounts
 
-| **Feature** | **Action**                                                 | **Expected Result**                                   | **Actual Result** |
-| ----------- | ---------------------------------------------------------- | ----------------------------------------------------- | ----------------- |
-| Gallery     | Navigate to the Gallery page                               | Find pictures of the restaurant and food served there | Works as expected |
-| Promo video | Navigate to the GAlelry page and scroll to the promo video | Watch promo video                                     | Works as expected |
+| **Feature**  | **Action**                                    | **Expected Result**          | **Actual Result** |
+| ------------ | --------------------------------------------- | ---------------------------- | ----------------- |
+| Social Media | Click the icon of social media page on footer | Navigates to social accounts | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-4.jpg">
+<img src="docs/user-story-test/social-media-user-test.jpg">
 </details>
 
 5. I want to leave feedback
 
-| **Feature** | **Action**                                               | **Expected Result**                         | **Actual Result** |
-| ----------- | -------------------------------------------------------- | ------------------------------------------- | ----------------- |
-| Meal-deal   | On home page scroll down to the Sunday meal deal section | Find the meal-deal for the upcomming Sunday | Works as expected |
+| **Feature**   | **Action**                        | **Expected Result**              | **Actual Result** |
+| ------------- | --------------------------------- | -------------------------------- | ----------------- |
+| Feedback Form | Click the envelope icon on footer | Navigates users to feedback form | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-5.jpg">
+<img src="docs/user-story-test/feedback-user-test.jpg">
 </details>
 
 6. I want to see my life & score
 
-| **Feature**                    | **Action**                       | **Expected Result** | **Actual Result** |
-| ------------------------------ | -------------------------------- | ------------------- | ----------------- |
-| Footer - opening times section | On any page scroll to the footer | See opening times   | Works as expected |
+| **Feature** | **Action**                 | **Expected Result**       | **Actual Result** |
+| ----------- | -------------------------- | ------------------------- | ----------------- |
+| Stats       | Check top side of the page | Shows player life & score | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-6.jpg">
+<img src="docs/user-story-test/stats-user-test.jpg">
 </details>
 
 7. I want to see the cost of powers
 
-| **Feature**                          | **Action**                                                        | **Expected Result** | **Actual Result** |
-| ------------------------------------ | ----------------------------------------------------------------- | ------------------- | ----------------- |
-| Footer - contact information section | On any page scroll to the footer                                  | See phone number    | Works as expected |
-| Info Box                             | Navigate to Contact Us page and locate the How to find us section | See phone number    | Works as expected |
+| **Feature**      | **Action**                | **Expected Result**             | **Actual Result** |
+| ---------------- | ------------------------- | ------------------------------- | ----------------- |
+| Hint Joker Cost  | Click the light bulb icon | Shows the cost in a confirm box | Works as expected |
+| Heart Joker Cost | Click the heart icon      | Shows the cost in a confirm box | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-7v1-15.jpg">
-<img src="docs/user-story-testing/user-story-7v2-15.jpg">
+<img src="docs/user-story-test/hint-user-test.jpg">
+<img src="docs/user-story-test/heart-user-test.jpg">
 </details>
 
 8. I want to see the history of my guesses
 
-| **Feature** | **Action**                | **Expected Result** | **Actual Result** |
-| ----------- | ------------------------- | ------------------- | ----------------- |
-| Menu        | Navigate to the menu page | Read the menu       | Works as expected |
+| **Feature** | **Action**                    | **Expected Result**                   | **Actual Result** |
+| ----------- | ----------------------------- | ------------------------------------- | ----------------- |
+| History     | Check the bottom side of page | Shows the old guesses of current word | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-8.jpg">
+<img src="docs/user-story-test/history-user-test.jpg">
 </details>
 
 As a returning user,
 
 9.  I want to be able to choose game difficulty
 
-| **Feature**  | **Action**                                                                                    | **Expected Result**            | **Actual Result** |
-| ------------ | --------------------------------------------------------------------------------------------- | ------------------------------ | ----------------- |
-| Contact Form | Navigate to the Contact Us Page and locate the contact form, fill out and submit contact form | Data submited via contact form | Works as expectd  |
+| **Feature**         | **Action**                    | **Expected Result**                | **Actual Result** |
+| ------------------- | ----------------------------- | ---------------------------------- | ----------------- |
+| Choosing Difficulty | Click the expected difficulty | Game starts with chosen difficulty | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-9-15.jpg">
+<img src="docs/user-story-test/difficulty-user-test.jpg">
 </details>
 
 10. I want to remember how to play
 
-| **Feature**                   | **Action**                       | **Expected Result**         | **Actual Result** |
-| ----------------------------- | -------------------------------- | --------------------------- | ----------------- |
-| Footer - social media section | On any page scroll to the bottom | Click on social media links | Works as expected |
+| **Feature** | **Action**     | **Expected Result**                  | **Actual Result** |
+| ----------- | -------------- | ------------------------------------ | ----------------- |
+| How To Play | Click "i" icon | Shows how to play in an alert window | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-10.jpg">
+<img src="docs/user-story-test/how-to-play-user-test.jpg">
 </details>
 
 11. I want to find social media accounts
 
-| **Feature**   | **Action**                                                          | **Expected Result**        | **Actual Result** |
-| ------------- | ------------------------------------------------------------------- | -------------------------- | ----------------- |
-| Meet the Chef | Navigate to the About page and scroll down to Meet the Chef section | Find brief bio of the Chef | Works as expected |
+| **Feature**  | **Action**                                    | **Expected Result**          | **Actual Result** |
+| ------------ | --------------------------------------------- | ---------------------------- | ----------------- |
+| Social Media | Click the icon of social media page on footer | Navigates to social accounts | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-11.jpg">
+<img src="docs/user-story-test/social-media-user-test.jpg">
 </details>
 
 12. I want to give feedback
 
-| **Feature** | **Action**                                                                   | **Expected Result**                            | **Actual Result** |
-| ----------- | ---------------------------------------------------------------------------- | ---------------------------------------------- | ----------------- |
-| Map         | Navigate to the Contact Us page, locate the map and click on directions link | See directions to the restaurant on Goole Maps | Works as expected |
+| **Feature**   | **Action**                        | **Expected Result**              | **Actual Result** |
+| ------------- | --------------------------------- | -------------------------------- | ----------------- |
+| Feedback Form | Click the envelope icon on footer | Navigates users to feedback form | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-1v1-12.jpg">
+<img src="docs/user-story-test/feedback-user-test.jpg">
 </details>
 
 13. I want to see my life & score
 
-| **Feature** | **Action**                                       | **Expected Result** | **Actual Result** |
-| ----------- | ------------------------------------------------ | ------------------- | ----------------- |
-| News        | Scroll down on home page and locate news section | Find latest news    | Works as expected |
+| **Feature** | **Action**                 | **Expected Result**       | **Actual Result** |
+| ----------- | -------------------------- | ------------------------- | ----------------- |
+| Stats       | Check top side of the page | Shows player life & score | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-13.jpg">
+<img src="docs/user-story-test/stats-user-test.jpg">
 </details>
 
 As the site owner,
 
 14. I want users to be able to find our social media accounts
 
-| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
-| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
-| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+| **Feature**  | **Action**                                    | **Expected Result**          | **Actual Result** |
+| ------------ | --------------------------------------------- | ---------------------------- | ----------------- |
+| Social Media | Click the icon of social media page on footer | Navigates to social accounts | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/social-media-user-test.jpg">
 </details>
 
 15. I want users to be able to find how to play
 
-| **Feature**                          | **Action**                                                                                    | **Expected Result**            | **Actual Result** |
-| ------------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------ | ----------------- |
-| Contact Form                         | Navigate to the Contact Us Page and locate the contact form, fill out and submit contact form | Data submited via contact form | Works as expectd  |
-| Info Box                             | Navigate to Contact Us page and locate the How to find us section                             | Find the phone number          | Works as expected |
-| Footer - contact information section | On any page scroll down to the footer                                                         | Find the phone number          | Works as expected |
+| **Feature** | **Action**     | **Expected Result**                  | **Actual Result** |
+| ----------- | -------------- | ------------------------------------ | ----------------- |
+| How To Play | Click "i" icon | Shows how to play in an alert window | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-7v1-15.jpg">
-<img src="docs/user-story-testing/user-story-7v2-15.jpg">
-<img src="docs/user-story-testing/user-story-9-15.jpg">
+<img src="docs/user-story-test/how-to-play-user-test.jpg">
 </details>
 
 16. I want users to be able to give feedback
 
-| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
-| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
-| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+| **Feature**   | **Action**                        | **Expected Result**              | **Actual Result** |
+| ------------- | --------------------------------- | -------------------------------- | ----------------- |
+| Feedback Form | Click the envelope icon on footer | Navigates users to feedback form | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/feedback-user-test.jpg">
 </details>
 
 17. I want users to see their current stats
 
-| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
-| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
-| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+| **Feature** | **Action**                 | **Expected Result**       | **Actual Result** |
+| ----------- | -------------------------- | ------------------------- | ----------------- |
+| Stats       | Check top side of the page | Shows player life & score | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/stats-user-test.jpg">
 </details>
 
 18. I want users to choose their desired difficulty
 
-| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
-| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
-| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+| **Feature**         | **Action**                    | **Expected Result**                | **Actual Result** |
+| ------------------- | ----------------------------- | ---------------------------------- | ----------------- |
+| Choosing Difficulty | Click the expected difficulty | Game starts with chosen difficulty | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/difficulty-user-test.jpg">
 </details>
 
 19. I want users to be able to go back to Homepage when they are in wrong page
 
-| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
-| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
-| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+| **Feature** | **Action**                           | **Expected Result**                                           | **Actual Result** |
+| ----------- | ------------------------------------ | ------------------------------------------------------------- | ----------------- |
+| 404 Page    | Appears when users are in wrong page | Shows the users they are in wrong page with a Homepage button | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="docs/user-story-testing/user-story-3-14.jpg">
+<img src="docs/user-story-test/404-user-test.jpg">
 </details>
 
 ## Bugs
 
-| **Bug**                                                                  | **Fix**                                                                                                           |
-| ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| Home page link stays highlighted when visiting another page              | Change active atribute to the correct page                                                                        |
-| The user can submit a contact form input without a message               | Add required attribute to message input field                                                                     |
-| Navbar divides into two rows on xs screen size                           | Add a media query to remove the right margin of the logo in the navbar on xs screen                               |
-| Email overflows on xs screen size                                        | Add a media query that makes the divs spread to 100% width on xs sreens to froce the content onto a seperate line |
-| When viewed on tablets, the contact page has whitespace after the footer | Set min-height for body to 100vh                                                                                  |
+| **Bug**                                                                   | **Fix**                                                |
+| ------------------------------------------------------------------------- | ------------------------------------------------------ |
+| When the words entered with capitalized letters, results are always wrong | Each letter is compared with their capitalized version |
 
 ## Deployment
 
@@ -555,8 +548,8 @@ The website was deployed using GitHub Pages by following these steps:
 
 1. In the GitHub repository navigate to the Settings tab
 2. On the left hand menu select Pages
-3. For the source select Branch: master
-4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://4n4ru.github.io/CI_MS1_BodelschwingherHof/"
+3. For the source select Branch: main
+4. After the webpage refreshes automaticaly you will se a ribbon on the top saying: "Your site is published at https://oguzhanakca.github.io/pp2-guess-the-word/"
 
 You can for fork the repository by following these steps:
 
@@ -575,43 +568,19 @@ You can clone the repository by following these steps:
 
 ## Credits
 
-Images not referenced below are owned by the developer.
-
-### Media
-
-In order of apearance:
-
-- [carousel-1](assets/images/carousel-1.jpg): Photo by <a href="https://unsplash.com/@heathergill?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Heather Gill</a> on <a href="https://unsplash.com/s/photos/pots-and-pans?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [news](assets/images/news.jpg): Photo by <a href="https://unsplash.com/@mareksminder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Claudia Altamimi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [meal-deal](assets/images/meal-deal.jpg): Photo by <a href="https://unsplash.com/@itssammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moqadam</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [chef](assets/images/chef.jpg): <a href='https://www.freepik.com/photos/food'>Food photo created by freepik - www.freepik.com</a>
-- [menu background](assets/images/menu-background.jpg): <a href="https://www.freepik.com/vectors/background">Background vector created by pikisuperstar - www.freepik.com</a>
-- [starter](assets/images/starter.jpg) Photo by <a href="https://unsplash.com/@margzu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Margarita Zueva</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [main meal](assets/images/main-meal.jpg) Photo by <a href="https://unsplash.com/@keriliwi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Keriliwi</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [kids meal](assets/images/kids-meal.jpg) Photo by <a href="https://unsplash.com/@itssammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moqadam</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [dessert](assets/images/dessert.jpg) Photo by <a href="https://unsplash.com/@almapapi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Krisztina Papp</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [wine](assets/images/wine.jpg) Photo by <a href="https://unsplash.com/@biljaminai?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Biljana Martinic</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [salad](assets/images/salad.jpg): Photo by <a href="https://unsplash.com/@itssammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moqadam</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [fish](assets/images/fish.jpg): Photo by <a href="https://unsplash.com/@itssammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moqadam</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [chicken](assets/images/chicken.jpg): Photo by <a href="https://unsplash.com/@itssammoqadam?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sam Moqadam</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-- [404 error image](assets/images/404-error.png): <a href='https://www.freepik.com/vectors/background'>Background vector created by freepik - www.freepik.com</a>
+- Words from [7esl.com](https://7esl.com/)
+  - [4 letter words](https://7esl.com/4-letter-words/)
+  - [5 letter words](https://7esl.com/5-letter-words/)
+  - [6 letter words](https://7esl.com/6-letter-words/)
+- Hints from [crosswordsolver.com](https://www.crosswordsolver.com/)
 
 ### Code
 
-In order of apearance:
-
-- The HTML for the responsive [Navbar with toggler](https://getbootstrap.com/docs/5.0/components/navbar/#toggler) was taken from the Bootstrap v5.0 documentation code snippet and combined with their [Navbar with Pills](https://getbootstrap.com/docs/5.0/components/navs-tabs/#pills)
-- [Carousel](https://getbootstrap.com/docs/5.0/components/carousel/#with-indicators) on index page was taken from Bootrap v5.0 documentation code snippet
-- CSS code to avoid whitespace below footer was taken from a forum post on [FreeCodeCamp](https://forum.freecodecamp.org/t/footer-white-space-below/191360)
-- 404 page was build using description on [GitHub Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site)
+- Fisher-Yates Sorting Algorithm used for Array Shuffling. It's found in [FreeCodeCamp](https://www.freecodecamp.org/) from Grant Rioardan's "How to Shuffle an Array of Items Using JavaScript or TypeScript" article.
+  - Code Source : [How to Shuffle an Array of Items Using JavaScript or TypeScript by Grant Rioardan](https://www.freecodecamp.org/news/how-to-shuffle-an-array-of-items-using-javascript-or-typescript/)
+- EmailJS used for getting mail from feedback form.
+  - [EmailJS](https://www.emailjs.com/)
 
 ## Acknowledgements
 
-I would like to take the opportunity to thank:
-
-- My mentor Mo Shami for his feedback, advice, guidance and support.
-- My husband Jure Runje for his support, advice, help with testing, and for giving me some kids free time to work on my project.
-- To the lovely people on the Code Institute Slack for providing peer code reviews.
-- My parents who own the restaurant that inspired this website
-
-h1 font : Protest Riot
+I would like to take the opportunity to thank my mentor Mo Shami for his guidance and support.
