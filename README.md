@@ -78,22 +78,32 @@ As a first time user,
 1. I want to be able to choose game difficulty
 2. I want to know how to play
 3. I want to have additional hints & lifes
-4. I want to know the word even if i can't to guess
-5. I want to find social media accounts
-6. I want to leave feedback
-7. I want to see my life & score
-8. I want to see the cost of powers
-9. I want to see the history of my guesses
-10. I want to know if my guess is correct or not
-11. I want to restart the game when i fail
+4. I want to find social media accounts
+5. I want to leave feedback
+6. I want to see my life & score
+7. I want to see the cost of powers
+8. I want to see the history of my guesses
 
 #### Returning User
 
-As a returning user, 12. I want to be able to choose game difficulty 13. I want to remember how to play 14. I want to find social media accounts 15. I want to give feedback
+As a returning user,
+
+9. I want to be able to choose game difficulty
+10. I want to remember how to play
+11. I want to find social media accounts
+12. I want to give feedback
+13. I want to see my life & score
 
 #### Site Owner
 
-As the site owner, 16. I want users to be able to find our social media accounts 14. I want users to be able to find how to play 15. I want users to be able to give feedback
+As the site owner,
+
+14. I want users to be able to find our social media accounts
+15. I want users to be able to find how to play
+16. I want users to be able to give feedback
+17. I want users to see their current stats
+18. I want users to choose their desired difficulty
+19. I want users to be able to go back to Homepage when they are in wrong page
 
 ## Design
 
@@ -180,116 +190,65 @@ The page is structured in a user and eye-friendly way. It's easy to learn and en
 
 The page consists of five pages and fourteen features
 
-### Logo & Title
-
-- Featured on all pages
-- It allows users to easily navigate the homepage
-- User stories covered:
-
-![Logo & Title](docs/features/logo.jpg)
-
 ### Footer
 
 - Featured on all pages except 404 page
 - The footer navigates to contact page and other social media platforms
 - It allows users to easily navigate the page
-- User stories covered:
+- User stories covered: 4, 5, 11, 12, 14, 16
 
 ![Footer](docs/features/footer.jpg)
 
 ### Difficulty Screen
 
 - Gives users the option to choose difficulty
-- User stories covered:
+- User stories covered: 1, 9, 18
 
 ![Difficulty Screen](docs/features/difficulty.jpg)
 
-### Game Information & How To Play
+### Game Information
 
 - Shows users their current stats
-- User stories covered:
+- User stories covered: 6, 13, 17
 
-![News](docs/features/game-information.jpg)
+![Game Information](docs/features/game-information.jpg)
 
 ### How To Play
 
-- Shows users how to play
-- User stories covered:
+- Shows users how to play in an alert box
+- User stories covered: 2, 10, 15
 
-![Meal-deal](docs/features/feature-meal-deal.jpg)
+![How To Play](docs/features/how-to-play.jpg)
 
-### Footer
+### Jokers
 
-- Featured on all five pages
-- Consists of three seperate sections: contact information, opening times, and social media links
-- User stories covered: 1, 6, 7, 10, 15
+- Asks users in a confirm box to use their Hint & Extra Life jokers
+- When used, shows the costs
+- User stories covered: 3, 7
 
-![Footer](docs/features/feature-footer.jpg)
+![Jokers](docs/features/jokers.jpg)
 
-### About Us
+### History
 
-- Gives a description of the restaurant and its facilities with a image of the front of the building on the right side
-- User stories covered: 3, 14
+- Shows users their previous guesses
+- User stories covered: 8
 
-![About Us](docs/features/feature-about-us.jpg)
+![History](docs/features/history.jpg)
 
-### Customer reviews
+### Contact Page
 
-- Features a few reviews left by the restaurants customers on social media
-- User stories covered: 3
+- Gives users a form to leave feedback
+- User stories covered: 5, 12, 16
 
-![Reviews](docs/features/feature-reviews.jpg)
+![Contact](docs/features/contact.jpg)
 
-### Meet the Chef
+### 404 Page
 
-- Features a short bio of the chef with an image of the chef on the left side
-- User stories covered: 11
+- Appears when users tries to navigate a page that doesn't exist
+- Gives a button for users to navigate Homepage
+- User stories covered: 19
 
-![Meet the Chef](docs/features/feature-meet-the-chef.jpg)
-
-### Menu
-
-- Gives an overview of the menu in five sections: starters, main meals, kids meals, dessers, and wine.
-- Each section of the menu is accompanied with an image of one of the items form the menu
-- Features pricing
-- User stories covered: 2, 8
-
-![Menu](docs/features/feature-menu.jpg)
-
-### Image Gallery
-
-- Imagery of the restaurant arranged in a grid
-- User stories covered: 4
-
-![Gallery](docs/features/feature-gallery.jpg)
-
-### Promo Video
-
-- A YouTube video to promote the restaurant
-- User stories covered: 4
-
-![Video](docs/features/feature-video.jpg)
-
-### Contact Form
-
-- A way for user to provide feedback
-- User stories covered: 9, 15
-
-![Contact Form](docs/features/feature-contact-form.jpg)
-
-### Map
-
-- Shows the restaurant location on an embeded Google Map
-- User stories covered: 1, 12
-
-![Map](docs/features/feature-map.jpg)
-
-### Info Box
-
-- Provides the user with information about the restaurant including addres, phone number, email, and the name of the owner
-- User stories covered: 7, 15
-
-![Info Box](docs/features/feature-info-box.jpg)
+![404](docs/features/404.jpg)
 
 ## Validation
 
@@ -298,31 +257,21 @@ The page consists of five pages and fourteen features
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
 
 <details><summary>Home</summary>
-<img src="docs/validation/validation-html-index.jpg">
+<img src="docs/validation/html-index.jpg">
 </details>
-<details><summary>About</summary>
-<img src="docs/validation/validation-html-about.jpg">
+<details><summary>Contact</summary>
+<img src="docs/validation/html-contact.jpg">
 </details>
-<details><summary>Menu</summary>
-<img src="docs/validation/validation-html-menu.jpg">
-</details>
-<details><summary>Gallery</summary>
-<img src="docs/validation/validation-html-gallery.jpg">
-</details>
-<details><summary>Home</summary>
-<img src="docs/validation/validation-html-contact.jpg">
+<details><summary>404</summary>
+<img src="docs/validation/html-404.jpg">
 </details>
 
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website.
-When validating the page as a whole, the validator shows some errors linked to Bootstrap v5.0. When validating just my own custom CSS it passes with no errors found and some warnings associated to using root variables.
 
-<details><summary>whole page</summary>
-<img src="docs/validation/validation-css-whole-page.jpg">
-</details>
 <details><summary>style.css</summary>
-<img src="docs/validation/validation-css-style.jpg">
+<img src="docs/validation/css.jpg">
 </details>
 
 ### Accessibility
@@ -330,19 +279,13 @@ When validating the page as a whole, the validator shows some errors linked to B
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
 
 <details><summary>Home</summary>
-<img src="docs/validation/validation-accessibility-index.jpg">
-</details>
-<details><summary>About</summary>
-<img src="docs/validation/validation-accessibility-about.jpg">
-</details>
-<details><summary>Menu</summary>
-<img src="docs/validation/validation-accessibility-menu.jpg">
-</details>
-<details><summary>Gallery</summary>
-<img src="docs/validation/validation-accessibility-gallery.jpg">
+<img src="docs/validation/wave-index.jpg">
 </details>
 <details><summary>Contact</summary>
-<img src="docs/validation/validation-accessibility-contact.jpg">
+<img src="docs/validation/wave-contact.jpg">
+</details>
+<details><summary>404</summary>
+<img src="docs/validation/wave-404.jpg">
 </details>
 
 ### Performance
@@ -350,54 +293,61 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
 
 <details><summary>Home</summary>
-<img src="docs/validation/lighthouse-performance-index.jpg">
-</details>
-<details><summary>About</summary>
-<img src="docs/validation/lighthouse-performance-about.jpg">
-</details>
-<details><summary>Menu</summary>
-<img src="docs/validation/lighthouse-performance-menu.jpg">
-</details>
-<details><summary>Gallery</summary>
-<img src="docs/validation/lighthouse-performance-gallery.jpg">
+<img src="docs/validation/lighthouse-index.jpg">
 </details>
 <details><summary>Contact</summary>
-<img src="docs/validation/lighthouse-performance-contact.jpg">
+<img src="docs/validation/lighthouse-contact.jpg">
+</details>
+<details><summary>404</summary>
+<img src="docs/validation/lighthouse-404.jpg">
+</details>
+
+### JavaScript
+
+JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files. No significant issues were found.
+
+<details><summary>gameplay.js</summary>
+<img src="docs/validation/jshint-gameplay.jpg">
+</details>
+<details><summary>game-settings.js</summary>
+<img src="docs/validation/jshint-game-settings.jpg">
+</details>
+<details><summary>contact.js</summary>
+<img src="docs/validation/jshint-contact.jpg">
 </details>
 
 ### Performing tests on various devices
 
 The website was tested on the following devices:
 
-- Lenovo Yoga 2 Pro (both in pc and tablet mode)
-- Honor 20 pro
-- Xiaomi Redmi Note 7
-
-In addition, the website was tested using Google Chrome Developer Tools Device Toggeling option for all available device options.
+- Iphone 6S
+- Ipad 5th Gen
 
 ### Browser compatability
 
 The website was tested on the following browsers:
 
 - Google Chrome
-- Mozilla Firefox
+- Opera
 - Microsoft Egde
 
 ### Testing user stories
 
-1. As a first time user, I want to know where the restaurant is lokated
+As a first time user,
 
-| **Feature**                          | **Action**                                             | **Expected Result**                                   | **Actual Result** |
-| ------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------- | ----------------- |
-| Map                                  | Navigate to the Contact Us page, locate the Google Map | Locating a map showing the location of the restaurant | Works as expected |
-| Footer - contact information section | On any page scroll down to the footer                  | Find the address of the restaurant                    | Works as expected |
+1.  I want to be able to choose game difficulty
+
+| **Feature**                          | **Action**                            | **Expected Result**                | **Actual Result** |
+| ------------------------------------ | ------------------------------------- | ---------------------------------- | ----------------- |
+| Choosing Difficulty                  | Click the expected difficulty         | Game starts with chosen difficulty | Works as expected |
+| Footer - contact information section | On any page scroll down to the footer | Find the address of the restaurant | Works as expected |
 
 <details><summary>Screenshots</summary>
 <img src="docs/user-story-testing/user-story-1v1-12.jpg">
 <img src="docs/user-story-testing/user-story-1v2.jpg">
 </details>
 
-2. As a first time user, I want to know the price range
+2. I want to know how to play
 
 | **Feature** | **Action**                | **Expected Result**     | **Actual Result** |
 | ----------- | ------------------------- | ----------------------- | ----------------- |
@@ -407,7 +357,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-2.jpg">
 </details>
 
-3. As a first time user, I want to know more about the restaurant
+3. I want to have additional hints & lifes
 
 | **Feature**      | **Action**                                                             | **Expected Result**                | **Actual Result** |
 | ---------------- | ---------------------------------------------------------------------- | ---------------------------------- | ----------------- |
@@ -418,7 +368,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-3-14.jpg">
 </details>
 
-4. As a first time user, I want to get a feel of what to expect at the restaurant
+4. I want to find social media accounts
 
 | **Feature** | **Action**                                                 | **Expected Result**                                   | **Actual Result** |
 | ----------- | ---------------------------------------------------------- | ----------------------------------------------------- | ----------------- |
@@ -429,7 +379,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-4.jpg">
 </details>
 
-5. As a returning user, I want to see the Sunday meal offer
+5. I want to leave feedback
 
 | **Feature** | **Action**                                               | **Expected Result**                         | **Actual Result** |
 | ----------- | -------------------------------------------------------- | ------------------------------------------- | ----------------- |
@@ -439,7 +389,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-5.jpg">
 </details>
 
-6. As a returnign user, I want to know the opening times
+6. I want to see my life & score
 
 | **Feature**                    | **Action**                       | **Expected Result** | **Actual Result** |
 | ------------------------------ | -------------------------------- | ------------------- | ----------------- |
@@ -449,7 +399,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-6.jpg">
 </details>
 
-7. As a returning user, I want to find a phone number to call for reservation
+7. I want to see the cost of powers
 
 | **Feature**                          | **Action**                                                        | **Expected Result** | **Actual Result** |
 | ------------------------------------ | ----------------------------------------------------------------- | ------------------- | ----------------- |
@@ -461,7 +411,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-7v2-15.jpg">
 </details>
 
-8. As a returning user, I want to see the menu
+8. I want to see the history of my guesses
 
 | **Feature** | **Action**                | **Expected Result** | **Actual Result** |
 | ----------- | ------------------------- | ------------------- | ----------------- |
@@ -471,7 +421,9 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-8.jpg">
 </details>
 
-9. As a returning user, I want to leave some comment, suggestion or message to the staff
+As a returning user,
+
+9.  I want to be able to choose game difficulty
 
 | **Feature**  | **Action**                                                                                    | **Expected Result**            | **Actual Result** |
 | ------------ | --------------------------------------------------------------------------------------------- | ------------------------------ | ----------------- |
@@ -481,7 +433,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-9-15.jpg">
 </details>
 
-10. As a returning user, I want to find the restaurant on social media
+10. I want to remember how to play
 
 | **Feature**                   | **Action**                       | **Expected Result**         | **Actual Result** |
 | ----------------------------- | -------------------------------- | --------------------------- | ----------------- |
@@ -491,7 +443,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-10.jpg">
 </details>
 
-11. As a returning user, I want to know who is preparing the food
+11. I want to find social media accounts
 
 | **Feature**   | **Action**                                                          | **Expected Result**        | **Actual Result** |
 | ------------- | ------------------------------------------------------------------- | -------------------------- | ----------------- |
@@ -501,7 +453,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-11.jpg">
 </details>
 
-12. As a returning user, I want to get directions to the restaurant
+12. I want to give feedback
 
 | **Feature** | **Action**                                                                   | **Expected Result**                            | **Actual Result** |
 | ----------- | ---------------------------------------------------------------------------- | ---------------------------------------------- | ----------------- |
@@ -511,7 +463,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-1v1-12.jpg">
 </details>
 
-13. As the site owner, I want users to find news about upcoming events or changes in opening times
+13. I want to see my life & score
 
 | **Feature** | **Action**                                       | **Expected Result** | **Actual Result** |
 | ----------- | ------------------------------------------------ | ------------------- | ----------------- |
@@ -521,7 +473,9 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-13.jpg">
 </details>
 
-14. As the site owner, I want users to get to know the restaurant
+As the site owner,
+
+14. I want users to be able to find our social media accounts
 
 | **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
 | ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
@@ -531,7 +485,7 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-3-14.jpg">
 </details>
 
-15. As the site owner, I want the users to be able to contact us
+15. I want users to be able to find how to play
 
 | **Feature**                          | **Action**                                                                                    | **Expected Result**            | **Actual Result** |
 | ------------------------------------ | --------------------------------------------------------------------------------------------- | ------------------------------ | ----------------- |
@@ -543,6 +497,46 @@ The website was tested on the following browsers:
 <img src="docs/user-story-testing/user-story-7v1-15.jpg">
 <img src="docs/user-story-testing/user-story-7v2-15.jpg">
 <img src="docs/user-story-testing/user-story-9-15.jpg">
+</details>
+
+16. I want users to be able to give feedback
+
+| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
+| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
+| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-3-14.jpg">
+</details>
+
+17. I want users to see their current stats
+
+| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
+| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
+| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-3-14.jpg">
+</details>
+
+18. I want users to choose their desired difficulty
+
+| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
+| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
+| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-3-14.jpg">
+</details>
+
+19. I want users to be able to go back to Homepage when they are in wrong page
+
+| **Feature** | **Action**                                         | **Expected Result**                           | **Actual Result** |
+| ----------- | -------------------------------------------------- | --------------------------------------------- | ----------------- |
+| About Us    | Navigate to About page and locate About Us section | See relevant information about the restaurant | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-story-testing/user-story-3-14.jpg">
 </details>
 
 ## Bugs
