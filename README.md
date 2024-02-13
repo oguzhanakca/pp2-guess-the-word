@@ -309,6 +309,9 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 
 JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files. No significant issues were found.
 
+- Gameplay.js undefined variable alert : The reason of this alert is using the variables defined in game-settings.js file. All variables works fine.
+- Contact.js undefined variable alert : The reason of this alert is using EmailJS for sending email from contact form. All variables works fine.
+
 <details><summary>gameplay.js</summary>
 <img src="docs/validation/jshint-gameplay.jpg">
 </details>
