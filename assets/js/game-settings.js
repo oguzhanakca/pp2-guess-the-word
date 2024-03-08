@@ -167,29 +167,77 @@ let mediumWords = [
   { word: "abyss", hint: "A very deep hole that seems to have no bottom" },
 ];
 let hardWords = [
-  { word: "abroad", hint: "overseas" },
-  { word: "hazard", hint: "danger" },
-  { word: "almond", hint: "nut" },
-  { word: "hornet", hint: "wasp" },
-  { word: "ambush", hint: "trap" },
-  { word: "bottle", hint: "flask" },
-  { word: "bridge", hint: "arch" },
-  { word: "castle", hint: "citadel" },
-  { word: "church", hint: "chapel" },
-  { word: "combat", hint: "battle" },
-  { word: "dealer", hint: "broker" },
-  { word: "danger", hint: "alert" },
-  { word: "desert", hint: "sand" },
-  { word: "empire", hint: "nation" },
-  { word: "employ", hint: "use" },
-  { word: "escape", hint: "flee" },
-  { word: "fabric", hint: "cloth" },
-  { word: "factor", hint: "element" },
-  { word: "forest", hint: "woods" },
-  { word: "gender", hint: "sex" },
-  { word: "gamble", hint: "bet" },
-  { word: "ground", hint: "terrain" },
-  { word: "harbor", hint: "port" },
+  { word: "abroad", hint: "In or to a foreign country or countries" },
+  {
+    word: "hazard",
+    hint: "Something that is dangerous and likely to cause damage",
+  },
+  {
+    word: "almond",
+    hint: "An edible oval nut with a hard shell, or the tree that it grows on",
+  },
+  { word: "hornet", hint: "A large wasp that can give you a bad sting" },
+  {
+    word: "ambush",
+    hint: "To suddenly attack someone after hiding and waiting for them",
+  },
+  {
+    word: "bottle",
+    hint: "A container for liquids, usually made of glass or plastic, with a narrow neck",
+  },
+  {
+    word: "bridge",
+    hint: "A structure that is built over a river, road, or railway to allow people and vehicles to cross from one side to the other",
+  },
+  {
+    word: "castle",
+    hint: "A large strong building, built in the past by a ruler or important person to protect the people inside from attack",
+  },
+  { word: "church", hint: "A building for Christian religious activities" },
+  { word: "combat", hint: "A fight, especially during a war" },
+  { word: "dealer", hint: "A person who trades in something" },
+  { word: "danger", hint: "The possibility of harm or death to someone" },
+  {
+    word: "desert",
+    hint: "An area, often covered with sand or rocks, where there is very little rain and not many plants",
+  },
+  {
+    word: "empire",
+    hint: "A group of countries ruled by a single person, government, or country",
+  },
+  {
+    word: "employ",
+    hint: "To have someone work or do a job for you and pay them for it",
+  },
+  {
+    word: "escape",
+    hint: "To get free from something such as a prison or cage, or from someone who will not allow you to leave",
+  },
+  {
+    word: "fabric",
+    hint: "Cloth or material for making clothes, covering furniture, etc.",
+  },
+  {
+    word: "factor",
+    hint: "A fact or situation that influences the result of something",
+  },
+  {
+    word: "forest",
+    hint: "A large area of land covered with trees and plants, usually larger than a wood, or the trees and plants themselves",
+  },
+  {
+    word: "gender",
+    hint: "A group of people in a society who share particular qualities or ways of behaving which that society associates with being male, female, or another identity",
+  },
+  {
+    word: "gamble",
+    hint: "To do something that involves risks that might result in loss of money or failure, hoping to get money or achieve success",
+  },
+  { word: "ground", hint: "The surface of the earth" },
+  {
+    word: "harbor",
+    hint: "An area of water next to the coast, often protected from the sea by a thick wall, where ships and boats can shelter",
+  },
 ];
 let gameWords;
 
