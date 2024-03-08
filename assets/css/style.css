@@ -85,6 +85,9 @@ h1 {
   border: none;
   border-radius: 20px;
 }
+#difficulties button:hover {
+  cursor: pointer;
+}
 /* Game Screen */
 #game-screen {
   display: flex;
