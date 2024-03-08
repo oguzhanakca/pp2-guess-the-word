@@ -575,7 +575,7 @@ You can clone the repository by following these steps:
   - [4 letter words](https://7esl.com/4-letter-words/)
   - [5 letter words](https://7esl.com/5-letter-words/)
   - [6 letter words](https://7esl.com/6-letter-words/)
-- Hints from [crosswordsolver.com](https://www.crosswordsolver.com/)
+- Hints from [Cambridge Dictionary](https://dictionary.cambridge.org/)
 
 ### Code
 
