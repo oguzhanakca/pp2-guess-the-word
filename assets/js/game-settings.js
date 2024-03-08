@@ -116,17 +116,17 @@ function loadWords(difficulty) {
     case "easy":
       selectedWords = shuffleWords(easyWords);
       scoreMultiply = 10;
-      powerCost = 100;
+      powerCost = 50;
       break;
     case "medium":
       selectedWords = shuffleWords(mediumWords);
       scoreMultiply = 15;
-      powerCost = 175;
+      powerCost = 75;
       break;
     default:
       selectedWords = shuffleWords(hardWords);
       scoreMultiply = 20;
-      powerCost = 250;
+      powerCost = 100;
       break;
   }
   return selectedWords;
