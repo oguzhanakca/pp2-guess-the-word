@@ -128,6 +128,7 @@ function inreaseScore() {
 }
 function decreaseScore() {
   score -= powerCost;
+  currentScoreUI.textContent = score;
 }
 // Show Hint
 function showHint() {
