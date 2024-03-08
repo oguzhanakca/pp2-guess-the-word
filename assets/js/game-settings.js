@@ -86,28 +86,85 @@ let easyWords = [
   { word: "wild", hint: "Uncontrolled, violent, or extreme" },
 ];
 let mediumWords = [
-  { word: "apple", hint: "fruit" },
-  { word: "beach", hint: "sea" },
-  { word: "brain", hint: "thinking" },
-  { word: "chair", hint: "furniture" },
-  { word: "clock", hint: "time" },
-  { word: "cloud", hint: "steam" },
-  { word: "diary", hint: "journal" },
-  { word: "earth", hint: "world" },
-  { word: "ghost", hint: "spirit" },
-  { word: "heart", hint: "love" },
-  { word: "house", hint: "cottage" },
-  { word: "juice", hint: "fluid" },
-  { word: "light", hint: "ignite" },
-  { word: "money", hint: "cash" },
-  { word: "plant", hint: "tree" },
-  { word: "radio", hint: "broadcasting" },
-  { word: "smile", hint: "laugh" },
-  { word: "snake", hint: "serpent" },
-  { word: "storm", hint: "tempest" },
-  { word: "table", hint: "desk" },
-  { word: "tiger", hint: "cat" },
-  { word: "abyss", hint: "chasm" },
+  {
+    word: "apple",
+    hint: "A round fruit with firm, white flesh and a green, red, or yellow skin",
+  },
+  {
+    word: "beach",
+    hint: "An area of sand or small stones near the sea or another area of water such as a lake",
+  },
+  {
+    word: "brain",
+    hint: "The organ inside the head that controls thought, memory, feelings, and activity",
+  },
+  {
+    word: "chair",
+    hint: "A seat for one person that has a back, usually four legs, and sometimes two arms",
+  },
+  {
+    word: "clock",
+    hint: "A device for measuring and showing time, usually found in or on a building and not worn by a person",
+  },
+  {
+    word: "cloud",
+    hint: "A grey or white mass in the sky, made up of very small floating drops of water",
+  },
+  {
+    word: "diary",
+    hint: "A book in which you record your thoughts or feelings or what has happened each day",
+  },
+  {
+    word: "earth",
+    hint: "The planet third in order of distance from the sun, between Venus and Mars; the world on which we live",
+  },
+  {
+    word: "ghost",
+    hint: "The spirit of a dead person, sometimes represented as a pale, almost transparent image of that person that some people believe appears to people who are alive",
+  },
+  {
+    word: "heart",
+    hint: "The organ in your chest that sends the blood around your body",
+  },
+  {
+    word: "house",
+    hint: "A building that people, usually one family, live in",
+  },
+  { word: "juice", hint: "The liquid that comes from fruit or vegetables" },
+  {
+    word: "light",
+    hint: "The brightness that comes from the sun, fire, etc. and from electrical devices, and that allows things to be seen",
+  },
+  {
+    word: "money",
+    hint: "Coins or special pieces of paper that are used to buy things, or an amount of these that a person has",
+  },
+  {
+    word: "plant",
+    hint: "A living thing that grows in earth, in water, or on other plants, usually has a stem, leaves, roots, and flowers, and produces seeds",
+  },
+  {
+    word: "radio",
+    hint: "A piece of electronic equipment used for listening to radio broadcasts",
+  },
+  {
+    word: "smile",
+    hint: "A happy or friendly expression on the face in which the ends of the mouth curve up slightly, often with the lips moving apart so that the teeth can be seen",
+  },
+  { word: "snake", hint: "A reptile with a long body and no legs" },
+  {
+    word: "storm",
+    hint: "An extreme weather condition with very strong wind, heavy rain, and often thunder and lightning",
+  },
+  {
+    word: "table",
+    hint: "A flat surface, usually supported by four legs, used for putting things on",
+  },
+  {
+    word: "tiger",
+    hint: "A large wild animal of the cat family with yellowish-orange fur with black lines that lives in parts of Asia",
+  },
+  { word: "abyss", hint: "A very deep hole that seems to have no bottom" },
 ];
 let hardWords = [
   { word: "abroad", hint: "overseas" },
