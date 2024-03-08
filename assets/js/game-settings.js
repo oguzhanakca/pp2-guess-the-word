@@ -222,17 +222,17 @@ function loadWords(difficulty) {
   switch (difficulty) {
     case "easy":
       selectedWords = shuffleWords(easyWords);
-      scoreMultiply = 10;
+      scoreMultiply = 5;
       powerCost = 50;
       break;
     case "medium":
       selectedWords = shuffleWords(mediumWords);
-      scoreMultiply = 15;
+      scoreMultiply = 8;
       powerCost = 75;
       break;
     default:
       selectedWords = shuffleWords(hardWords);
-      scoreMultiply = 20;
+      scoreMultiply = 10;
       powerCost = 100;
       break;
   }
