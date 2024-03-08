@@ -94,7 +94,6 @@ function startGame() {
   for (let i = 0; i < gameWords[0].word.length; i++) {
     currentWordUI.appendChild(addSpacesOnUI());
   }
-  console.log(gameWords[0].word);
 }
 // Create Space Element
 function addSpacesOnUI() {
