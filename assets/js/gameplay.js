@@ -20,7 +20,7 @@ let wrongAnswerScreen = document.getElementById("wrong-answer-screen");
 let endGameScreen = document.getElementById("end-game");
 
 // Stats
-let maxLife = 7;
+let maxLife = 10;
 let currentLife = maxLife;
 let score = 0;
 
