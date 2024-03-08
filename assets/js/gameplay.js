@@ -85,7 +85,7 @@ function createAnswerElement(correctAnswer, playerAnswer) {
 function checkLetters(correctAnswer, playerAnswer) {
   decreaseLife();
   if (correctAnswer.length === playerAnswer.length) {
-    if (currentLife < 6) {
+    if (currentLife < maxLife - 1) {
       addToHistoryUI(correctAnswer.length);
     }
     createAnswerElement(correctAnswer, playerAnswer);
@@ -132,10 +132,10 @@ function decreaseScore() {
 }
 // Show Hint
 function showHint() {
-  let wordHint = gameWords[0].hint.toUpperCase();
+  let wordHint = gameWords[0].hint;
   if (!hintUsed) {
     if (score >= powerCost) {
-      alert("Your Hint : " + wordHint);
+      alert("Hint : " + wordHint);
       decreaseScore();
       hintUsed = true;
     } else {
