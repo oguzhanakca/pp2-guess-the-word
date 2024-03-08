@@ -47,7 +47,7 @@ function eventListeners() {
 // Show How To Play
 function howToPlay() {
   let explanation =
-    "Red Background = Word doesn't contains the letter.\nYellow Background = Word contains the letter, but its in the wrong place.\nGreen Background = Word contains letter and its in correct place.\nEvery power can be used once every word.\nHeart = Gives +1 Life\nLight Bulb = Gives info about current word.\nPower costs change with game difficulty.";
+    "Red Background = Word doesn't contains the letter.\nYellow Background = Word contains the letter, but its in the wrong place.\nGreen Background = Word contains letter and its in correct place.\n- Every power can be used once every word.\nHeart = Gives +1 Life\nLight Bulb = Gives info about current word.\n- Hint can be viewed many times on same word if its bought once\nPower costs change with game difficulty.";
   alert(explanation);
 }
 // Check Answer
@@ -110,7 +110,7 @@ function increaseLife() {
   if (currentLife < maxLife && score > powerCost && !lifeUsed) {
     currentLife++;
     decreaseScore();
-    remainingLifeUI.textContent = life;
+    remainingLifeUI.textContent = currentLife;
     lifeUsed = true;
   } else if (currentLife == maxLife) {
     alert("You can't use this power at full life!");
